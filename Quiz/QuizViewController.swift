@@ -65,6 +65,8 @@ class QuizViewController: UIViewController {
     
     @IBAction func choiceAnswer(sender: UIButton) {
         
+        print(sender.tag)
+        
         let tmpArray = quizArray[0] as! [Any]
         
         if tmpArray[4] as! Int == sender.tag {
