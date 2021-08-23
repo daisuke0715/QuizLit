@@ -56,7 +56,7 @@ class QuizViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toResultView" {
-            let resultVC = self.storyboard?.instantiateViewController(identifier: "resultVC") as! ResultViewController
+            let resultVC = segue.destination as! ResultViewController
             resultVC.correctAnswer = self.correctAnswer
         }
     }
